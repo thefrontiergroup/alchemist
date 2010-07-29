@@ -187,7 +187,7 @@ module Alchemist
       :troy_pound => 373.2417, :apothecary_pound => 373.2417, :troy_pounds => 373.2417, :apothecary_pounds => 373.2417,
       :slug => 14593.9029, :slugs => 14593.9029,
       :assay_ton => 29.1667, :assay_tons => 29.1667, :AT => 29.1667,
-      :metric_ton => 1000000, :metric_tons => 1000000,
+      :metric_ton => 1000000, :metric_tons => 1000000, :t => 1000000,
       :ton => 907184.74, :tons => 907184.74, :short_tons => 907184.74,
       #unusual measurements
       :elephant => 5443108.44, :elephants => 5443108.44
@@ -270,6 +270,13 @@ module Alchemist
       :microfortnight => 1.2096, :microfortnights => 1.2096,
       :megaannum => 3.1536e+16, :Ma => 3.1536e+16, :megaannums => 3.1536e+16,
       :galactic_year => 7.884e+18, :galactic_years => 7.884e+18, :GY => 7.884e+18
+    },
+    :velocity => {
+      :meters_per_second => 1.0, :meters_second => 1.0, :mps => 1.0,
+      :metres_per_second => 1.0, :metres_second => 1.0, :mps => 1.0,
+      :kilometers_per_hour => 3.6, :kilometers_hour => 3.6, :kph => 3.6,
+      :kilometres_per_hour => 3.6, :kilometres_hour => 3.6, :kph => 3.6,
+      :miles_per_hour => 2.2369, :miles_hour => 2.2369, :mph => 2.2369
     },
     :volume => {
       :litre => 1.0, :liter => 1.0, :litres => 1.0, :liters => 1.0, :l => 1.0, :L => 1.0,
