@@ -99,6 +99,11 @@ module Alchemist
       :franklin => 3.335641e-10, :franklins => 3.335641e-10, :Fr => 3.335641e-10,
       :statcoulomb => 3.335641e-10, :statcoulombs => 3.335641e-10
     },
+    :electric_current => {
+      :ampere => 1.0, :amperes => 1.0, :amp => 1.0, :amps => 1.0, :A => 1.0,
+      :milliamperes => 1.0e-3, :milliampere => 1.0e-3, :milliamp => 1.0e-3, :milliamps => 1.0e-3, :mA => 1.0e-3
+      :plank_current => 3.479e+25
+    },
     :electric_conductance => {
       :siemen => 1.0, :siemens => 1.0, :S => 1.0, :mho => 1.0,
       :abmho => 1.0e+9, :absiemen => 1.0e+9, :absiemens => 1.0e+9,
