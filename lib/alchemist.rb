@@ -536,7 +536,7 @@ module Alchemist
     @@unit_prefixes.each do |prefix, value|
       if unit.to_s =~ /^#{prefix}.+/ && @@si_units.include?(unit.to_s.gsub(/^#{prefix}/,''))        
         if !(Conversions[ unit.to_s.gsub(/^#{prefix}/,'').to_sym ] & [ :information_storage ]).empty? && !@use_si && value >= 1000.0 && value.to_i & -value.to_i != value
-          value = 2 ** (10 * (Math.log(value) / Math.log(10)) / 3)
+          value = 2 ** (10 * (Math.log(value) / Math.log(10)).round / 3)
         end
         return [value, unit.to_s.gsub(/^#{prefix}/,'').to_sym]
       end
