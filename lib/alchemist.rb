@@ -502,7 +502,6 @@ module Alchemist
         args.map!{|a| a.is_a?(NumericConversion) ? a.send(@unit_name).to_f / @exponent : a }
         @value = @value.send( unit_name, *args, &block )
 
-
         unit_name == :/ ? @value : self
       end
     end
